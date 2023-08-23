@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bulma/css/bulma.min.css">
+  <title>Meu Blog - Comentários</title>
+</head>
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../index.html">
+        <strong>Meu Blog</strong>
+      </a>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="../index.html">
+          Página Inicial
+        </a>
+        <a class="navbar-item" href="post1.html">
+          Post 1
+        </a>
+        <!-- Adicione links para outras páginas de post e a página de contato, se tiver -->
+      </div>
+      <!-- Aqui você pode adicionar elementos de autenticação ou outros elementos à direita -->
+    </div>
+  </nav>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Comentários</h1>
+      <div class="comments">
+        <!-- Comentários serão exibidos aqui -->
+      </div>
+      <form class="comment-form">
+        <h2 class="subtitle">Deixe um Comentário</h2>
+        <div class="field">
+          <label class="label">Nome:</label>
+          <div class="control">
+            <input class="input" type="text" id="comment-name" placeholder="Seu Nome">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Comentário:</label>
+          <div class="control">
+            <textarea class="textarea" id="comment-text" placeholder="Seu Comentário"></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <button class="button is-primary" id="submit-comment">Enviar Comentário</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <script src="comments.js"></script>
+</body>
+</html>

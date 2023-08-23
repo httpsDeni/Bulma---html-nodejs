@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <title>Meu Blog</title>
+</head>
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <strong>Meu Blog</strong>
+      </a>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="index.html">
+          Página Inicial
+        </a>
+        <a class="navbar-item" href="posts/post1.html">
+          Post 1
+        </a>
+        <!-- Adicione links para outras páginas de post e a página de contato, se tiver -->
+      </div>
+      <!-- Aqui você pode adicionar elementos de autenticação ou outros elementos à direita -->
+    </div>
+  </nav>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Bem-vindo ao Meu Blog</h1>
+      <div class="content">
+        <p>Este é um blog simples criado com Bulma e Node.js.</p>
+      </div>
+    </div>
+  </section>
+   <!-- Barra de Pesquisa -->
+   <div class="field">
+    <label class="label">Pesquisar:</label>
+    <div class="control">
+      <input class="input" type="text" id="search-input" placeholder="Digite a palavra-chave">
+    </div>
+  </div>
+
+  <!-- Resultados da Pesquisa -->
+  <div id="search-results">
+    <!-- Resultados serão exibidos aqui -->
+  </div>
+</div>
+
+ <!-- Categorias -->
+ <div class="field">
+    <label class="label">Categorias:</label>
+    <div class="control">
+      <div class="tags">
+        <a href="#" class="tag">Todas</a>
+        <a href="#" class="tag">Tecnologia</a>
+        <a href="#" class="tag">Viagens</a>
+        <!-- Adicione mais tags para outras categorias -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Tags -->
+  <div class="field">
+    <label class="label">Tags:</label>
+    <div class="control">
+      <div class="tags">
+        <a href="#" class="tag">Tag 1</a>
+        <a href="#" class="tag">Tag 2</a>
+        <!-- Adicione mais tags para outras tags -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Resultados de Categorias e Tags -->
+  <div id="category-tag-results">
+    <!-- Resultados serão exibidos aqui -->
+  </div>
+</div>
+
+ <!-- Paginação -->
+ <nav class="pagination" role="navigation" aria-label="pagination">
+    <a class="pagination-previous" href="#">Anterior</a>
+    <a class="pagination-next" href="#">Próximo</a>
+    <ul class="pagination-list">
+      <!-- Páginas serão listadas aqui -->
+    </ul>
+  </nav>
+<script src="search.js"></script>
+<script src="category-tag-filter.js"></script>
+<script src="pagination.js"></script>
+
+</body>
+</html>
